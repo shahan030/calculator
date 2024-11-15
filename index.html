@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="calutor">
+        <input type="text" id="result" class="display" placeholder="0" readonly>
+        <div class="keys">
+          <div>
+              <button class="button" onclick="calclear('')">AC</button>
+              <button  class="button-opertor" onclick="displaycont('%')">%</button>
+              <button class="button" onclick="removeDigit()">del</button>
+              <button  class="button-opertor" onclick="displaycont('/')">/</button>
+          </div>
+           <div>
+             <button class="button" onclick="displaycont('7')">7</button>
+             <button class="button" onclick="displaycont('8')">8</button>
+             <button class="button" onclick="displaycont('9')">9</button>
+             <button  class="button-opertor" onclick="displaycont('*')">*</button>
+           </div>
+            <div>
+                <button class="button" onclick="displaycont('4')">4</button>
+                <button class="button" onclick="displaycont('5')">5</button>
+                <button class="button" onclick="displaycont('6')">6</button>
+                <button class="button-opertor" onclick="displaycont('-')">-</button>
+            </div>
+           <div>
+             <button class="button" onclick="displaycont('1')">1</button>
+             <button class="button" onclick="displaycont('2')">2</button>
+             <button class="button" onclick="displaycont('3')">3</button>
+             <button  class="button-opertor" onclick="displaycont('+')">+</button>
+           </div>
+           <div>
+            <button class="button" onclick="displaycont('00')">00</button>
+            <button class="button" onclick="displaycont('0')">0</button>
+            <button  class="button-opertor" onclick="displaycont('.')">.</button>
+            <button  class="button-opertor" onclick="calresult()">=</button>
+          </div>
+        </div>
+    </div>
+    
+    
+</body>
+<!-- js -->
+<script src="./calcutor.js"></script>
+</html>
